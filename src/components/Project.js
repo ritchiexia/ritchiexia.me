@@ -6,7 +6,7 @@ const Project = ({ project }) => {
       <br />
       <a className="projectid" href={project.href}>{project.id}</a>
       <p>{project.date}</p>
-      <p className="bold">{project.position}</p>
+      <b>{project.position}</b>
       <p>{project.desc}</p>
       <div className="stack">
         {project.stack.map((s) => (<Stack name={s} />))}
