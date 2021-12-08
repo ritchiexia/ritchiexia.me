@@ -151,6 +151,7 @@ a {
 .stack {
   display: flex;
   flex-direction: row;
+  margin-top: 5px;
 }
 
 .lang {
@@ -160,7 +161,10 @@ a {
   margin-right: 5px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 11;
+}
+
+.langname {
+  font-size: small;
 }
 
 footer {
