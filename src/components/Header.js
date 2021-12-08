@@ -1,4 +1,5 @@
 import Icons from './Icons'
+import FadeIn from 'react-fade-in'
 
 const icons = [
   {
@@ -25,13 +26,15 @@ const icons = [
 
 const Header = () => {
   return (
+    <FadeIn>
     <header className="header">
       <img className="profilepic" src="images/pfp.jpg" alt="pfp"/>
-      <div>
+      <FadeIn>
         <h1>Ritchie Xia</h1>
         <Icons icons={icons} />
-      </div>
+      </FadeIn>
     </header>
+    </FadeIn>
   )
 }
 
