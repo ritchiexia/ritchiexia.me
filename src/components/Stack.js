@@ -1,7 +1,7 @@
 const Stack = ({ name }) => {
   return (
     <div className="lang">
-      <p className="langname">{name}</p>
+      <p>{name}</p>
     </div>
   )
 }
