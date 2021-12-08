@@ -34,16 +34,21 @@ a {
 
 .btn {
   display: inline-block;
-  background: #000;
-  color: #fff;
+  background: rgb(211,211,211,0.8);
+  color: black;
   border: none;
   padding: 10px 20px;
   margin: 5px;
+  margin-right: 0px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 15px;
+  font-size: large;
   font-family: inherit;
+}
+
+.btn:hover {
+  background: rgb(211,211,211);
 }
 
 .btn:focus {
@@ -155,12 +160,12 @@ a {
 
 .lang {
   display: inline-block;
-  background-color: lightgray;
+  background: lightgray;
   padding: 2px 5px;
   margin-right: 5px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 11;
+  font-size: 12px;
 }
 
 footer {

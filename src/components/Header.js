@@ -27,13 +27,13 @@ const icons = [
 const Header = () => {
   return (
     <FadeIn>
-    <header className="header">
-      <img className="profilepic" src="images/pfp.jpg" alt="pfp"/>
-      <FadeIn>
-        <h1>Ritchie Xia</h1>
-        <Icons icons={icons} />
-      </FadeIn>
-    </header>
+      <header className="header">
+        <img className="profilepic" src="images/pfp.jpg" alt="pfp"/>
+        <FadeIn>
+          <h1>Ritchie Xia</h1>
+          <Icons icons={icons} />
+        </FadeIn>
+      </header>
     </FadeIn>
   )
 }
