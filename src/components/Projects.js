@@ -6,8 +6,8 @@ const projects = [
     href: "/",
     date: "Feb 2021 🌲",
     position: "Developer",
-    desc: "Creating a user-friendly service allowing teachers to exchange ideas" 
-          + " and teaching methods for a better education.",
+    desc: "Creating a user-friendly forum allowing teachers to exchange" 
+          + " resources, ideas, and questions.",
     stack: []
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     date: "Feb 2021 🎮",
     position: "Developer",
     desc: "Designed a web page allowing users to connect through sharing videos"
-          + " of gaming highlights.",
+          + " of gaming highlights. 🏆 Won Community Choice Award.",
     stack: ["HTML", "CSS", "JavaScript"]
   },
   {
