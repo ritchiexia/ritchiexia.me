@@ -11,6 +11,17 @@ const projects = [
     stack: []
   },
   {
+    id: "BookCards",
+    href: "https://github.com/ritchiexia/book-recommender",
+    date: "Mar - May 2021 📚",
+    position: "Developer",
+    desc: "Developed a dating app-style book recommender powered by machine " 
+          + "learning in a group of 4. Matches new users with existing users "
+          + "that have similar book tastes, then continues to adapt using "
+          + "reinforcement learning based on swipe activity.",
+    stack: ["Python (ML + API)", "React", "MongoDB"]
+  },
+  {
     id: "Epic Gamer Moments (StormHacks 2021)",
     href: "https://epicgamermoments.online",
     date: "Feb 2021 🎮",
