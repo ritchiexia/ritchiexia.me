@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <header className="header">
       <img className="profilepic" src="images/pfp.jpg" alt="pfp" />
-      <div>
+      <div className="profileright">
         <h1>Ritchie Xia</h1>
-        <span>
+        <ul className="profileiconlist">
           <a href="https://github.com/ritchiexia">
             <GithubIcon className="profileicon" />
           </a>
@@ -22,7 +22,7 @@ const Header = () => {
           <a href="https://www.linkedin.com/in/ritchie-xia-1b5052206/">
             <LinkedInIcon className="profileicon" />
           </a>
-        </span>
+        </ul>
       </div>
     </header>
   );
