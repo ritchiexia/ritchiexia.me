@@ -1,41 +1,31 @@
-import Icons from './Icons'
-import FadeIn from 'react-fade-in'
-
-const icons = [
-  {
-    id: "github",
-    href: "https://github.com/ritchiexia",
-    src: "images/github.png"
-  },
-  {
-    id: "twitter",
-    href: "https://twitter.com/ritchie_xia",
-    src: "images/twitter.png"
-  },
-  {
-    id: "mail",
-    href: "mailto:rxia@student.ubc.ca",
-    src: "images/mail.png"
-  },
-  {
-    id: "linkedin",
-    href: "https://www.linkedin.com/in/ritchie-xia-1b5052206/",
-    src: "images/linkedin.png"
-  }
-]
+import { ReactComponent as GithubIcon } from "../icons/github.svg";
+import { ReactComponent as TwitterIcon } from "../icons/twitter.svg";
+import { ReactComponent as MailIcon } from "../icons/mail.svg";
+import { ReactComponent as LinkedInIcon } from "../icons/linkedin.svg";
 
 const Header = () => {
   return (
-    <FadeIn>
-      <header className="header">
-        <img className="profilepic" src="images/pfp.jpg" alt="pfp"/>
-        <FadeIn>
-          <h1>Ritchie Xia</h1>
-          <Icons icons={icons} />
-        </FadeIn>
-      </header>
-    </FadeIn>
-  )
-}
+    <header className="header">
+      <img className="profilepic" src="images/pfp.jpg" alt="pfp" />
+      <div>
+        <h1>Ritchie Xia</h1>
+        <div>
+          <a href="https://github.com/ritchiexia">
+            <GithubIcon className="profileicon" />
+          </a>
+          <a href="https://twitter.com/ritchie_xia">
+            <TwitterIcon className="profileicon" />
+          </a>
+          <a href="mailto:rxia@student.ubc.ca">
+            <MailIcon className="profileicon" />
+          </a>
+          <a href="https://www.linkedin.com/in/ritchie-xia-1b5052206/">
+            <LinkedInIcon className="profileicon" />
+          </a>
+        </div>
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

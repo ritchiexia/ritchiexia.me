@@ -1,21 +1,33 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <nav>
       <ul class="navbar">
-        <button className="navlink" onClick={() => {
-          navigate("/")
-        }}>Projects</button>
+        <button
+          className="navlink"
+          activeClassName="active"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Projects
+        </button>
 
-        <button className="navlink" onClick={() => {
-          navigate("/about")
-        }}>About</button>
+        <button
+          className="navlink"
+          activeClassName="active"
+          onClick={() => {
+            navigate("/about");
+          }}
+        >
+          About
+        </button>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

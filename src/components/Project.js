@@ -1,18 +1,22 @@
-import Stack from "./Stack"
+import Stack from "./Stack";
 
 const Project = ({ project }) => {
   return (
     <div>
       <br />
-      <a className="projectid" href={project.href}>{project.id}</a>
+      <a className="projectid" href={project.href}>
+        {project.id}
+      </a>
       <p>{project.date}</p>
       <b>{project.position}</b>
       <p>{project.desc}</p>
       <div className="stack">
-        {project.stack.map((s) => (<Stack name={s} />))}
+        {project.stack.map((s) => (
+          <Stack name={s} key={s} />
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
