@@ -3,7 +3,6 @@ import Stack from "./Stack";
 const Project = ({ project }) => {
   return (
     <div>
-      <br />
       <a className="projectid" href={project.href}>
         {project.id}
       </a>

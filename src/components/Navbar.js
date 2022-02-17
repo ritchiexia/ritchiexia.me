@@ -1,31 +1,14 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
-
   return (
-    <nav>
-      <ul class="navbar">
-        <button
-          className="navlink"
-          activeClassName="active"
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          Projects
-        </button>
-
-        <button
-          className="navlink"
-          activeClassName="active"
-          onClick={() => {
-            navigate("/about");
-          }}
-        >
-          About
-        </button>
-      </ul>
+    <nav className="navbar">
+      <NavLink to="/" activeClassName="active" className="navlink">
+        Projects
+      </NavLink>
+      <NavLink to="/about" activeClassName="active" className="navlink">
+        About
+      </NavLink>
     </nav>
   );
 };

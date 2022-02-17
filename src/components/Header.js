@@ -9,7 +9,7 @@ const Header = () => {
       <img className="profilepic" src="images/pfp.jpg" alt="pfp" />
       <div>
         <h1>Ritchie Xia</h1>
-        <div>
+        <span>
           <a href="https://github.com/ritchiexia">
             <GithubIcon className="profileicon" />
           </a>
@@ -22,7 +22,7 @@ const Header = () => {
           <a href="https://www.linkedin.com/in/ritchie-xia-1b5052206/">
             <LinkedInIcon className="profileicon" />
           </a>
-        </div>
+        </span>
       </div>
     </header>
   );
