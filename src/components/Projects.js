@@ -2,16 +2,6 @@ import Project from "./Project";
 
 const projects = [
   {
-    id: "Treeline",
-    href: "/",
-    date: "Feb 2021 🌲",
-    position: "Developer",
-    desc:
-      "Creating a user-friendly forum allowing teachers to exchange" +
-      " resources, ideas, and questions.",
-    stack: [],
-  },
-  {
     id: "BookCards",
     href: "https://github.com/ritchiexia/book-recommender",
     date: "Mar - May 2021 📚",

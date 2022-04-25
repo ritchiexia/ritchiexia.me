@@ -1,8 +1,14 @@
 import Stack from "./Stack";
+import { useSpring, animated } from "react-spring";
 
 const Project = ({ project }) => {
+  const fadeUp = useSpring({
+    to: { opacity: 1, transform: "translateY(0)" },
+    from: { opacity: 0, transform: "translateY(100%)" },
+  });
+
   return (
-    <div className="projectentry">
+    <animated.div style={fadeUp} className="projectentry">
       <a className="projectid" href={project.href}>
         {project.id}
       </a>
@@ -13,7 +19,7 @@ const Project = ({ project }) => {
           <Stack name={s} key={s} />
         ))}
       </div>
-    </div>
+    </animated.div>
   );
 };
 

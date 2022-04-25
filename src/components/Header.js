@@ -4,16 +4,21 @@ import { ReactComponent as LinkedInIcon } from "../icons/linkedin.svg";
 import { useSpring, animated } from "react-spring";
 
 const Header = () => {
-  const props = useSpring({
+  const fadeUp = useSpring({
     to: { opacity: 1, transform: "translateY(0)" },
     from: { opacity: 0, transform: "translateY(100%)" },
   });
+  const fadeLeft = useSpring({
+    to: { opacity: 1, transform: "translateX(0)" },
+    from: { opacity: 0, transform: "translateX(100%)" },
+  });
+
   return (
     <header className="header">
-      <animated.div style={props}>
+      <animated.div style={fadeUp}>
         <img className="profilepic" src="images/pfp.jpg" alt="pfp" />
       </animated.div>
-      <div className="profileright">
+      <animated.div style={fadeLeft} className="profileright">
         <h1>Ritchie Xia</h1>
         <ul className="profileiconlist">
           <a href="https://github.com/ritchiexia">
@@ -26,7 +31,7 @@ const Header = () => {
             <LinkedInIcon className="profileicon" />
           </a>
         </ul>
-      </div>
+      </animated.div>
     </header>
   );
 };
