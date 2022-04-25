@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://db.onlinewebfonts.com/c/cbbfee9126dc0abc730b9875dc28832f?family=Akkurat+Pro");
 
 * {
   box-sizing: border-box;
@@ -8,7 +7,7 @@
 }
 
 body {
-  font-family: "Akkurat Pro", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
