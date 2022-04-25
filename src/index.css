@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url(//db.onlinewebfonts.com/c/cbbfee9126dc0abc730b9875dc28832f?family=Akkurat+Pro);
 
 * {
   box-sizing: border-box;
@@ -7,13 +8,18 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Akkurat Pro", sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.35;
 }
 
 a {
@@ -114,12 +120,16 @@ li {
   gap: 1rem;
 }
 
+.projectentry > * {
+  margin: 0.3rem 0;
+}
+
 .projectid {
   background-image: linear-gradient(skyblue, skyblue);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-position-x: right;
-  transition: background-size 500ms;
+  transition: background-size 200ms;
   font-weight: bold;
   font-size: x-large;
   text-decoration: underline solid skyblue 3px;
@@ -143,7 +153,16 @@ li {
   margin-right: 5px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 12px;
+}
+
+.lang > p {
+  font-size: 0.8rem;
+}
+
+/* About Me */
+
+.aboutme > * {
+  margin: 1rem 0;
 }
 
 @media (max-width: 40em) {

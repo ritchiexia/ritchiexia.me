@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: "Epic Gamer Moments (StormHacks 2021)",
-    href: "https://epicgamermoments.online",
+    href: "https://epicgamermoments.netlify.app/",
     date: "Feb 2021 🎮",
     position: "Developer",
     desc:
@@ -47,13 +47,10 @@ const projects = [
 ];
 
 const Projects = () => {
-  return (
-    <div className="projectcontainer">
-      {projects.map((project) => (
-        <Project key={project.id} project={project} />
-      ))}
-    </div>
-  );
+  const p = projects.map((project) => (
+    <Project key={project.id} project={project} />
+  ));
+  return <div className="projectcontainer">{p}</div>;
 };
 
 export default Projects;
