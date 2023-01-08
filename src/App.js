@@ -1,21 +1,38 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import About from "./components/About";
+import "./styles/App.scss";
+import { ReactComponent as GithubIcon } from "./icons/github.svg";
+import { ReactComponent as LinkedInIcon } from "./icons/linkedin.svg";
+import { ReactComponent as TwitterIcon } from "./icons/twitter.svg";
+import Experience from "./components/Experience";
+import { ExperienceList } from "./components/ExperienceList";
 
 function App() {
   return (
-    <Router>
-      <div className="container">
-        <Header />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Projects />} />
-          <Route path="about" element={<About />} />
-        </Routes>
+    <div className="container">
+      <div className="profile">
+        <img className="profile__pic" src="/images/me.jpg" alt="Me!" />
+        <div className="profile__right">
+          <h2>Ritchie Xia</h2>
+          <span className="profile__icon-list">
+            <a href="https://github.com/ritchiexia">
+              <GithubIcon className="profile__icon-item" />
+            </a>
+            <a href="https://www.linkedin.com/in/ritchiexia/">
+              <LinkedInIcon className="profile__icon-item" />
+            </a>
+            <a href="https://twitter.com/ritchie_xia">
+              <TwitterIcon className="profile__icon-item" />
+            </a>
+          </span>
+        </div>
       </div>
-    </Router>
+
+      <div className="experiences">
+        {ExperienceList.map((experience) => (
+          <Experience experience={experience} />
+        ))}
+        {/* <Experience experience={ExperienceList[0]} /> */}
+      </div>
+    </div>
   );
 }
 

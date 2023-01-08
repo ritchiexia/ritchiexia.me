@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+.container {
+  background-color: #1f1b24;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: min(70vw, 400px);
+  padding: 2rem;
+
+  .profile {
+    display: flex;
+    gap: 1rem;
+
+    .profile__pic {
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      height: 6rem;
+    }
+
+    .profile__right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .profile__icon-list {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .profile__icon-item {
+      aspect-ratio: 1 / 1;
+      fill: #fefefe;
+      height: 1.5rem;
+      transition: 150ms all ease;
+    }
+
+    .profile__icon-item:hover,
+    .profile__icon-item:active {
+      fill: grey;
+    }
+  }
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
