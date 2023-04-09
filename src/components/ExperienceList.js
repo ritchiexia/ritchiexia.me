@@ -3,7 +3,9 @@ export const ExperienceList = [
     company: "Samsung",
     title: "Frontend Web Developer Co-op",
     date: "Jan 2023 - Present",
-    description: "",
+    description: `• Developed MVP PoC investigating migration of web app to microfrontend architecture that decentralizes build and deployment processes of subservices, allowing teams to schedule releases independently 
+    • Created foundational integration/mocked E2E Cypress tests to validate proper function
+    • Spearheaded investigation and development to upgrade React to version 18.x, including thorough documentation`,
   },
   {
     company: "PayByPhone",

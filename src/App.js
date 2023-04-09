@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="container">
       <div className="profile">
-        <img className="profile__pic" src="/images/me.jpg" alt="Me!" />
+        <img className="profile__pic" src="/images/me.png" alt="Me!" />
         <div className="profile__right">
           <h2>Ritchie Xia</h2>
           <span className="profile__icon-list">
@@ -30,7 +30,6 @@ function App() {
         {ExperienceList.map((experience) => (
           <Experience experience={experience} />
         ))}
-        {/* <Experience experience={ExperienceList[0]} /> */}
       </div>
     </div>
   );
