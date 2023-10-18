@@ -1,9 +1,16 @@
 export const ExperienceList = [
   {
+    company: "Arrow",
+    title: "",
+    date: "Oct 2023 - Present",
+    description: ``,
+  },
+  {
     company: "Samsung",
     title: "Frontend Web Developer Co-op",
-    date: "Jan 2023 - Present",
-    description: `• Developed MVP PoC investigating migration of web app to microfrontend architecture that decentralizes build and deployment processes of subservices, allowing teams to schedule releases independently 
+    date: "Jan 2023 - Sep 2023",
+    description: `•	Migrated Java Spring Boot service to utilize Apache Kafka
+    • Developed MVP PoC investigating migration of web app to microfrontend architecture that decentralizes build and deployment processes of subservices
     • Created foundational integration/mocked E2E Cypress tests to validate proper function
     • Spearheaded investigation and development to upgrade React to version 18.x, including thorough documentation`,
   },
